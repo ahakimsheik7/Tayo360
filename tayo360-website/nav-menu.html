@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tayo360 – Your Full Circle of Growth in e-learning, wellness, and digital marketing." />
+  <meta name="keywords" content="Tayo360, e-learning, digital marketing, Quran, Islamic studies, Arabic, Somali, AI prompt, blog" />
+  <title>Tayo360 | Your Full Circle of Growth</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background: #ffffff;
+      padding: 16px 32px;
+      border-bottom: 2px solid #1A4C8B;
+      flex-wrap: wrap;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #1A4C8B;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      min-width: 180px;
+      z-index: 1;
+      flex-direction: column;
+    }
+    .dropdown-content a {
+      padding: 10px 16px;
+      display: block;
+      color: #333;
+    }
+    .dropdown:hover .dropdown-content {
+      display: flex;
+    }
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      margin: 4px 0;
+    }
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #fff;
+        margin-top: 16px;
+      }
+      nav.show {
+        display: flex;
+      }
+      .menu-toggle {
+        display: flex;
+      }
+      .dropdown-content {
+        position: static;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('show')">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <nav role="navigation" aria-label="Main Navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#marketing">Digital Marketing</a>
+      <div class="dropdown">
+        <a href="#elearning" aria-haspopup="true" aria-expanded="false">E-learning</a>
+        <div class="dropdown-content" role="menu">
+          <a href="#quran">Qur'an</a>
+          <a href="#tajweed">Tajweed</a>
+          <a href="#arabic">Arabic 101</a>
+          <a href="#islamic">Islamic Studies</a>
+          <a href="#somali">Af-Soomaali</a>
+        </div>
+      </div>
+      <a href="#ai">AI Prompt</a>
+      <a href="#blog">Blog</a>
+    </nav>
+  </header>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.querySelector('.menu-toggle');
+      toggle.addEventListener('click', () => {
+        document.querySelector('nav').classList.toggle('show');
+      });
+    });
+  </script>
+
+</body>
+</html>

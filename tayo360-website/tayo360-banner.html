@@ -1,0 +1,129 @@
+<!-- Tayo360 Visual Hero Banner with Icons -->
+<div class="hero-banner" aria-hidden="true">
+    <!-- Floating Elements -->
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+  
+    <!-- Animated Waves -->
+    <div class="wave wave-1"></div>
+    <div class="wave wave-2"></div>
+  
+    <!-- Core Icons -->
+    <div class="icon work-digital">
+      <svg width="48" height="48" fill="#ffffff" viewBox="0 0 24 24">
+        <path d="M4 4h16v12H4z"/><path d="M2 20h20v2H2z"/>
+      </svg>
+      <p>Digital Work</p>
+    </div>
+  
+    <div class="icon virtual-learning">
+      <svg width="48" height="48" fill="#ffffff" viewBox="0 0 24 24">
+        <path d="M12 2L1 7l11 5 11-5-11-5zm0 7.5L3.74 7 12 3.5 20.26 7 12 9.5zM11 12v9h2v-9h-2z"/>
+      </svg>
+      <p>E-Learning</p>
+    </div>
+  
+    <div class="icon mental-clarity">
+      <svg width="48" height="48" fill="#ffffff" viewBox="0 0 24 24">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 
+                 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 
+                 1.01 4.5 2.09C13.09 4.01 14.76 3 16.5 
+                 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 
+                 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+      <p>Clear Thinking</p>
+    </div>
+  
+    <div class="icon wellness">
+      <svg width="48" height="48" fill="#ffffff" viewBox="0 0 24 24">
+        <path d="M21 5h-3V3h-2v2H8V3H6v2H3v16h18V5zM5 19V9h14v10H5z"/>
+      </svg>
+      <p>Wellness</p>
+    </div>
+  
+    <div class="icon nutrition">
+      <svg width="48" height="48" fill="#ffffff" viewBox="0 0 24 24">
+        <path d="M12 2a5 5 0 00-5 5c0 1.38.56 2.63 
+                 1.46 3.54l.04.04L12 17l3.5-6.42.04-.04A5 
+                 5 0 0017 7a5 5 0 00-5-5z"/>
+      </svg>
+      <p>Eat Healthy</p>
+    </div>
+  </div>
+  
+  <style>
+    .hero-banner {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(135deg, #1A4C8B, #00A7E1);
+      overflow: hidden;
+      z-index: -1;
+    }
+  
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: #fff;
+      opacity: 0.15;
+      animation: float 12s ease-in-out infinite;
+    }
+  
+    .circle-1 {
+      width: 250px;
+      height: 250px;
+      top: 10%;
+      left: 5%;
+    }
+  
+    .circle-2 {
+      width: 200px;
+      height: 200px;
+      bottom: 15%;
+      right: 10%;
+    }
+  
+    .wave {
+      position: absolute;
+      width: 200%;
+      height: 300px;
+      border-radius: 40%;
+      background: rgba(255, 255, 255, 0.06);
+      animation: waveMotion 20s linear infinite;
+    }
+  
+    .wave-1 { bottom: 0; left: -50%; }
+    .wave-2 { bottom: -40px; left: -60%; animation-delay: 10s; }
+  
+    .icon {
+      position: absolute;
+      text-align: center;
+      opacity: 0.9;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      animation: float 6s ease-in-out infinite;
+    }
+  
+    .icon svg {
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .work-digital { top: 15%; left: 8%; }
+    .virtual-learning { top: 40%; left: 12%; }
+    .mental-clarity { bottom: 30%; right: 12%; }
+    .wellness { bottom: 15%; right: 8%; }
+    .nutrition { top: 25%; right: 25%; }
+  
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  
+    @keyframes waveMotion {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+  
